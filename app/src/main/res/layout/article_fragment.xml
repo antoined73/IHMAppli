@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/cardview_light_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:textAlignment="center">
+
+            <ImageView
+                android:id="@+id/image_article"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/blur" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:alpha="0.5"
+                android:scaleType="centerCrop"
+                android:src="@color/material_drawer_dark_background" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="100dp"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/titleTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="top"
+                    android:text="Title"
+                    android:textAlignment="textEnd"
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/categoryTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="top"
+                    android:text="Category"
+                    android:textAlignment="textEnd"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/orderButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="ajouter au panier" />
+
+                <TextView
+                    android:id="@+id/priceTW"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:text="Titre"
+                    android:textColor="@color/material_drawer_primary_text"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/descriptionTW"
+                android:layout_width="match_parent"
+                android:layout_height="443dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eros nisi, cursus iaculis orci eget, vestibulum auctor sapien. Vivamus vulputate tortor et massa convallis sagittis. Nunc eu tincidunt sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. In sed metus sit amet odio blandit egestas dignissim sit amet enim. Nam eu lacus id enim tincidunt vehicula. Nam id scelerisque massa. Proin vulputate hendrerit fermentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eros nisi, cursus iaculis orci eget, vestibulum auctor sapien. Vivamus vulputate tortor et massa convallis sagittis. Nunc eu tincidunt sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. In sed metus sit amet odio blandit egestas dignissim sit amet enim. Nam eu lacus id enim tincidunt vehicula. Nam id scelerisque massa. Proin vulputate hendrerit fermentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eros nisi, cursus iaculis orci eget, vestibulum auctor sapien. Vivamus vulputate tortor et massa convallis sagittis. Nunc eu tincidunt sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. In sed metus sit amet odio blandit egestas dignissim sit amet enim. Nam eu lacus id enim tincidunt vehicula. Nam id scelerisque massa. Proin vulputate hendrerit fermentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eros nisi, cursus iaculis orci eget, vestibulum auctor sapien. Vivamus vulputate tortor et massa convallis sagittis. Nunc eu tincidunt sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. In sed metus sit amet odio blandit egestas dignissim sit amet enim. Nam eu lacus id enim tincidunt vehicula. Nam id scelerisque massa. Proin vulputate hendrerit fermentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eros nisi, cursus iaculis orci eget, vestibulum auctor sapien. Vivamus vulputate tortor et massa convallis sagittis. Nunc eu tincidunt sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. In sed metus sit amet odio blandit egestas dignissim sit amet enim. Nam eu lacus id enim tincidunt vehicula. Nam id scelerisque massa. Proin vulputate hendrerit fermentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eros nisi, cursus iaculis orci eget, vestibulum auctor sapien. Vivamus vulputate tortor et massa convallis sagittis. Nunc eu tincidunt sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. In sed metus sit amet odio blandit egestas dignissim sit amet enim. Nam eu lacus id enim tincidunt vehicula. Nam id scelerisque massa. Proin vulputate hendrerit fermentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;posuere cubilia Curae;"
+                android:textColor="@color/material_drawer_primary_text"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

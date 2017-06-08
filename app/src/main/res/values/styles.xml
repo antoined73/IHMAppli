@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base"/>
+    <style name="AppTheme.Base" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="actionModeStyle">@style/MyThemeActionBar.ActionMode</item>
+        <!--<item name="android:actionModeBackground">@color/accent</item>-->
+    </style>
+    <style name="MyThemeActionBar.ActionMode" parent="Widget.AppCompat.ActionMode">
+        <item name="background">@color/primary</item>
+        <item name="android:statusBarColor">@color/colorAccent</item>
+        <item name="android:background">?android:attr/actionModeBackground</item>
+        <item name="android:backgroundSplit">?android:attr/actionModeSplitBackground</item>
+        <item name="android:height">?android:attr/actionBarSize</item>
+    </style>
+</resources>

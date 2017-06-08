@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.MainActivity">
+
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="100"
+        android:title="Search"
+        android:icon="@drawable/ic_search_black_24dp"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always"/>
+
+    <!--<item-->
+        <!--android:id="@+id/action_order"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:title="Order"-->
+        <!--android:icon="@drawable/ic_shopping_cart_24dp"-->
+        <!--app:showAsAction="always"/>-->
+
+</menu>
