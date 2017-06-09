@@ -47,7 +47,7 @@ public class InterestsActivity extends ToolBarActivity {
 
     @Override
     public Fragment getInitialFragment() {
-        return CriteriaFragment.newInstance(R.color.cardview_shadow_end_color,true);
+        return CriteriaFragment.newInstance(R.color.md_white_1000,true);
     }
 
 }

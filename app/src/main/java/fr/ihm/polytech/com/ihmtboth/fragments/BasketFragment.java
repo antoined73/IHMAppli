@@ -3,6 +3,7 @@ package fr.ihm.polytech.com.ihmtboth.fragments;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -75,8 +76,7 @@ public class BasketFragment extends SearchBarFragment {
         Loader loader = new Loader(getActivity());
         Basket basket = loader.loadBasket();
         new Saver(this.getActivity()).resetBasket();
-        Toast t = Toast.makeText(this.getContext(),basket.getArticles().size()+" articles achetés !",Toast.LENGTH_LONG);
-        t.show();
+        Snackbar.make(getView().findViewById(R.id.linear), basket.getArticles().size()+" articles achetés !", Snackbar.LENGTH_LONG).show();
         updateListAndFilter();
     }
 

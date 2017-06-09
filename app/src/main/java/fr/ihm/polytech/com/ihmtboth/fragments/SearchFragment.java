@@ -45,7 +45,7 @@ public class SearchFragment extends SearchBarFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = super.onCreateView(inflater, container, savedInstanceState);
-        toolbar.setTitle("Search");
+        toolbar.setTitle("Recherche");
         return view;
     }
 
@@ -64,7 +64,7 @@ public class SearchFragment extends SearchBarFragment {
 //            } catch (MalformedURLException e) {
 //                e.printStackTrace();
 //            }
-            bdd.deleteArticleContainingArticleExample();
+//            bdd.deleteArticleContainingArticleExample();
         } catch (IOException e) {
             e.printStackTrace();
         } catch (SQLException e) {

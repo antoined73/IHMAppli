@@ -151,7 +151,7 @@ public class NewsDBHelper extends SQLiteOpenHelper {
         while (iter.hasNext()) {
             Article article = iter.next();
 
-            if (!request.isWanted(article.getCategory())) iter.remove();
+            if (!request.isWanted(article)) iter.remove();
         }
         return list;
     }

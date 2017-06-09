@@ -41,6 +41,7 @@ public class MyMapFragment extends Fragment implements OnMapReadyCallback {
         // Inflate the layout for this fragment
         Toolbar toolbar = ((MainActivity) getActivity()).getToolBar();
         toolbar.getMenu().clear();//inflateMenu(R.menu.empty_menu);
+        toolbar.setTitle("Contact");
         return inflater.inflate(R.layout.contact_fragment, container, false);
     }
 

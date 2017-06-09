@@ -12,6 +12,6 @@
         android:paddingTop="5dp"
         android:text=""
         android:textAlignment="center"
-        android:id="@+id/filter"
+        android:id="@+id/filterText"
         android:background="@color/colorPrimary"/>
 </LinearLayout>

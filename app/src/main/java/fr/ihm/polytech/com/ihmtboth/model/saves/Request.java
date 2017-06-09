@@ -13,6 +13,8 @@ import fr.ihm.polytech.com.ihmtboth.model.Category;
 
 public class Request implements Serializable {
     Map<Category,Boolean> wantedCategories;
+    private float minPrice;
+    private float maxPrice;
 
     public Request() {
         wantedCategories = new HashMap<>();
@@ -26,10 +28,23 @@ public class Request implements Serializable {
     }
 
     public boolean isWanted(Article article) {
-        return wantedCategories.get(article.getCategory());
+        boolean rightCategory = wantedCategories.get(article.getCategory());
+        boolean upperMin = minPrice<=article.getPrice();
+        boolean lowerMax = maxPrice>=article.getPrice();
+        boolean isWanted = lowerMax && upperMin && rightCategory;
+        return isWanted;
     }
 
     public void setAsWanted(Category category, boolean isChecked) {
         wantedCategories.put(category,isChecked);
+    }
+
+    public void setPrice(float min, float max) {
+        this.minPrice = min;
+        this.maxPrice = max;
+    }
+
+    public float getMinPrice() {
+        return minPrice;
     }
 }

@@ -50,9 +50,8 @@ public class FilterFragment extends Fragment implements MyFilterListener {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        filterText = (TextView) view.findViewById(R.id.filter);
+        filterText = (TextView) view.findViewById(R.id.filterText);
         filterText.setText(filteredList.size()+" articles trouvés sur "+totalNumber);
-
     }
 
     @Override

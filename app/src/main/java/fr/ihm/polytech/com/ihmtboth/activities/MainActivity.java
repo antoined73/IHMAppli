@@ -43,10 +43,12 @@ public class MainActivity extends DrawerActivity{
 
     private void syncSavedPrefs() {
         Loader loader = new Loader(this);
-        Request request = loader.loadRequest();
+        Request request = loader.loadInterest();
         Basket basket = loader.loadBasket();
         if(request==null){
             new Saver(this).saveRequest(new Request());
+        }else{
+            new Saver(this).saveRequest(request);
         }
         if(basket==null){
             new Saver(this).saveBasket(new Basket());
